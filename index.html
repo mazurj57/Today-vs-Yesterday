@@ -1,88 +1,47 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#10131a">
-  <title>Yesterday — Was / Were | A1 English</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <a class="skip" href="#lesson">Skip to lesson</a>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Lesson home"><span>V</span> English Lab</a>
-    <div class="progress-wrap" aria-label="Lesson progress"><span id="progressText">0% complete</span><div class="progress"><i id="progressBar"></i></div></div>
-  </header>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0e1117"><title>Yesterday — Was / Were | A1</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body>
+<a class="skip" href="#lesson">Skip to lesson</a><header class="topbar"><a class="brand" href="#top"><span>V</span> English Lab</a><div class="progress-wrap"><span id="progressText">0 / 20 explored</span><div class="progress"><i id="progressBar"></i></div></div></header>
+<main id="lesson"><section class="hero" id="top"><div><p class="eyebrow">A1 • Talking about the past</p><h1>How was your <em>yesterday?</em></h1><p class="lede">Listen. Notice. Practise. Then tell your own story.</p><a class="button primary" href="#step-1">Start lesson ↓</a></div><div class="hero-card" aria-hidden="true"><span>☀</span><b>NOW</b><strong>am · is · are</strong><i></i><span>☾</span><b>PAST</b><strong>was · were</strong></div></section>
+<nav class="chapters"><a href="#step-1"><b>1</b><span>Discover</span></a><a href="#step-5"><b>5</b><span>Practice</span></a><a href="#step-10"><b>10</b><span>Questions</span></a><a href="#step-15"><b>15</b><span>Recall</span></a><a href="#step-20"><b>20</b><span>Speak</span></a></nav>
 
-  <main id="lesson">
-    <section class="hero" id="top">
-      <div>
-        <p class="eyebrow">A1 • Talking about the past</p>
-        <h1>How was your <em>yesterday?</em></h1>
-        <p class="lede">Notice the pattern, practise it, then tell your own story.</p>
-        <a class="button primary" href="#notice">Start the lesson <span>↓</span></a>
-      </div>
-      <div class="hero-card" aria-hidden="true"><span class="sun">☀</span><b>TODAY</b><strong>am · is · are</strong><i></i><span class="moon">☾</span><b>YESTERDAY</b><strong>was · were</strong></div>
-    </section>
+<section class="chapter" id="step-1" data-step="1"><header><span class="number">01</span><div><p class="eyebrow blue">Lead-in</p><h2>Today vs yesterday</h2><p>Answer aloud. Don’t study a rule yet.</p></div></header><div class="compare-grid"><article class="time-card today"><span class="tag">TODAY</span><h3>Are you tired today?</h3><p>Are you at home now?</p><p>Is the weather good?</p><p>Is your motorcycle clean?</p><p>Are you busy?</p></article><article class="time-card yesterday"><span class="tag">YESTERDAY</span><h3>Were you tired yesterday?</h3><p>Were you at home?</p><p>Was the weather good?</p><p>Was your motorcycle clean?</p><p>Were you busy?</p></article></div><div class="discovery"><p>What changes?</p><div class="formula"><button class="chip-answer" data-answer="are → were">are → ?</button><button class="chip-answer" data-answer="is → was">is → ?</button></div></div></section>
 
-    <nav class="chapters" aria-label="Lesson chapters">
-      <a href="#notice"><b>1</b><span>Notice</span></a><a href="#story"><b>2</b><span>Story</span></a><a href="#practice"><b>3</b><span>Practice</span></a><a href="#questions"><b>4</b><span>Questions</span></a><a href="#speak"><b>5</b><span>Speak</span></a>
-    </nav>
+<section class="chapter" id="step-2" data-step="2"><header><span class="number">02</span><div><p class="eyebrow purple">Read & listen</p><h2>Yesterday</h2><p>Listen first. Open the script only when you’re ready.</p></div></header><div class="audio-bar"><button class="speak" data-speak="story">▶ Listen to the story</button><button class="stop-audio">■ Stop</button><label>Speed <select id="speechRate"><option value=".72">Slow</option><option value=".9" selected>Natural</option><option value="1">Fast</option></select></label></div><details class="script-toggle"><summary>Show story script</summary><div id="story" class="story-text"><p>Yesterday was a busy day.</p><p>In the morning, I was at home. I was tired because it was very early.</p><p>At 7:00, I was in my car. The roads were busy.</p><p>At lunchtime, I was hungry, but my lunch was very simple.</p><p>In the evening, I was at home again. My motorcycle was in the garage.</p><p>My friends were busy, so I was alone.</p><p>At 11:00, I was very tired and I went to bed.</p></div></details><div class="quiz"><h3>Check understanding</h3><div id="storyQuestions"></div></div></section>
 
-    <section class="chapter" id="notice" data-step>
-      <header><span class="number">01</span><div><p class="eyebrow blue">Guided discovery</p><h2>Today or yesterday?</h2><p>Say your answers aloud. Then tap the past card.</p></div></header>
-      <div class="compare-grid">
-        <article class="time-card today"><span class="tag">TODAY</span><h3>Are you tired today?</h3><p>Is your motorcycle clean?</p><p>Are you busy?</p></article>
-        <button class="time-card yesterday reveal-card" id="revealPast" aria-expanded="false"><span class="tag">YESTERDAY</span><span class="cover">Tap to travel back in time →</span><span class="revealed"><h3><mark>Were</mark> you tired yesterday?</h3><p><mark>Was</mark> your motorcycle clean?</p><p><mark>Were</mark> you busy?</p></span></button>
-      </div>
-      <div class="discovery">
-        <p>What changed?</p><div class="formula"><span>am / is</span><b>→</b><button class="chip-answer" data-answer="was">?</button><span>are</span><b>→</b><button class="chip-answer" data-answer="were">?</button></div>
-      </div>
-    </section>
+<section class="chapter" id="step-3" data-step="3"><header><span class="number">03</span><div><p class="eyebrow blue">Notice</p><h2>Find the pattern</h2><p>Look at the examples. Then sort the picture cards.</p></div></header><div class="examples"><span>I <b>was</b> tired.</span><span>The motorcycle <b>was</b> in the garage.</span><span>The roads <b>were</b> busy.</span><span>My friends <b>were</b> busy.</span></div><div class="sort-task"><div class="card-bank" id="cardBank"></div><div class="drop-grid"><div class="dropzone" data-zone="was"><h3>WAS</h3><p>I · he · she · it · one thing</p></div><div class="dropzone" data-zone="were"><h3>WERE</h3><p>you · we · they · groups</p></div></div><p class="micro">Drag a picture into a category. On touch devices, tap a picture and then WAS or WERE.</p><button class="button secondary" id="resetSort">Reset cards</button></div></section>
 
-    <section class="chapter" id="story" data-step>
-      <header><span class="number">02</span><div><p class="eyebrow purple">Read in context</p><h2>One busy day</h2><p>Read the story. Notice <strong>was</strong> and <strong>were</strong>.</p></div></header>
-      <article class="story-card">
-        <div class="timeline" aria-hidden="true"><span>7:00</span><i></i><span>12:30</span><i></i><span>19:00</span><i></i><span>23:00</span></div>
-        <div class="story-text"><p>Yesterday <mark>was</mark> a busy day. In the morning, I <mark>was</mark> at home. I <mark>was</mark> tired because it <mark>was</mark> very early.</p><p>At 7:00, I <mark>was</mark> in my car. The roads <mark>were</mark> busy. At lunchtime, I <mark>was</mark> hungry, but my lunch <mark>was</mark> very simple.</p><p>In the evening, I <mark>was</mark> at home again. My motorcycle <mark>was</mark> in the garage. My friends <mark>were</mark> busy, so I <mark>was</mark> alone.</p></div>
-      </article>
-      <div class="quiz" data-quiz="story"><h3>Quick meaning check</h3><p>Choose an answer for each question.</p>
-        <div class="question" data-correct="yes"><b>Was he tired in the morning?</b><div><button data-value="yes">Yes, he was.</button><button data-value="no">No, he wasn’t.</button></div></div>
-        <div class="question" data-correct="yes"><b>Were the roads busy?</b><div><button data-value="yes">Yes, they were.</button><button data-value="no">No, they weren’t.</button></div></div>
-        <div class="question" data-correct="no"><b>Was his lunch big?</b><div><button data-value="yes">Yes, it was.</button><button data-value="no">No, it wasn’t.</button></div></div>
-        <div class="question" data-correct="no"><b>Were his friends free?</b><div><button data-value="yes">Yes, they were.</button><button data-value="no">No, they weren’t.</button></div></div>
-      </div>
-    </section>
+<section class="chapter" id="step-4" data-step="4"><header><span class="number">04</span><div><p class="eyebrow purple">Meaning</p><h2>Three useful contexts</h2><p>Tap each card to hear it.</p></div></header><div class="context-grid"><button class="listen-card" data-text="I was at home. He was at work. We were in the car."><i>📍</i><small>WHERE</small><b>I was at home.</b><span>He was at work.<br>We were in the car.</span></button><button class="listen-card" data-text="I was tired. She was hungry. They were happy."><i>🙂</i><small>FEELING</small><b>I was tired.</b><span>She was hungry.<br>They were happy.</span></button><button class="listen-card" data-text="The weather was good. The road was busy. The motorcycles were very loud."><i>🌦</i><small>DESCRIPTION</small><b>The weather was good.</b><span>The road was busy.<br>The motorcycles were loud.</span></button></div></section>
 
-    <section class="chapter" id="practice" data-step>
-      <header><span class="number">03</span><div><p class="eyebrow blue">Pattern & practice</p><h2>Choose was or were</h2><p>One simple pattern. Then test it.</p></div></header>
-      <div class="rule-grid"><article><span>ONE person / thing</span><h3>I · he · she · it</h3><strong>WAS</strong></article><article><span>YOU + groups</span><h3>you · we · they</h3><strong>WERE</strong></article></div>
-      <div class="context-row"><span>📍 place <b>I was at home.</b></span><span>🙂 feeling <b>They were happy.</b></span><span>🌦 description <b>It was cold.</b></span></div>
-      <div class="gap-card"><div class="scoreline"><div><p class="eyebrow orange">Challenge</p><h3>Complete the sentences</h3></div><strong id="gapScore">0 / 8</strong></div><div id="gapList"></div><button class="button secondary" id="retryGaps">Shuffle & retry</button></div>
-      <aside class="note"><span>!</span><p><b>Make it negative</b><br><strong>was not → wasn’t</strong> &nbsp;·&nbsp; <strong>were not → weren’t</strong></p></aside>
-      <div class="negative-builder"><h3>Tap a sentence to change it</h3><div id="negativeCards"></div></div>
-    </section>
+<section class="chapter" id="step-5" data-step="5"><header><span class="number">05</span><div><p class="eyebrow orange">Controlled practice</p><h2>Choose WAS or WERE</h2><p>Complete orally first. Then select.</p></div></header><div class="gap-card"><div class="scoreline"><h3>Complete the sentences</h3><strong id="gapScore">0 / 10</strong></div><div id="gapList"></div><button class="button secondary" id="retryGaps">Shuffle & retry</button></div></section>
 
-    <section class="chapter" id="questions" data-step>
-      <header><span class="number">04</span><div><p class="eyebrow purple">Build questions</p><h2>Move it to the front</h2><p>Compare, then put the words in order.</p></div></header>
-      <div class="switch-example"><div><small>STATEMENT</small><p>You <mark>were</mark> tired.</p></div><span>→</span><div><small>QUESTION</small><p><mark>Were</mark> you tired?</p></div></div>
-      <aside class="warning"><span>×</span><p><del>Did you were tired?</del><br><b>Were you tired?</b> — no <strong>did</strong> with was / were.</p></aside>
-      <div class="order-card"><div class="scoreline"><div><p class="eyebrow orange">Word order</p><h3>Build the question</h3></div><strong id="orderCount">1 / 6</strong></div><p>Tap the words in the correct order.</p><div class="answer-zone" id="answerZone" aria-live="polite"></div><div class="word-bank" id="wordBank"></div><div class="feedback" id="orderFeedback"></div><button class="button secondary" id="resetOrder">Reset</button></div>
-    </section>
+<section class="chapter" id="step-6" data-step="6"><header><span class="number">06</span><div><p class="eyebrow orange">Supported recall</p><h2>Match the halves</h2><p>Tap a beginning, then a logical ending. More than one combination can work.</p></div></header><div class="match-area"><div id="matchStarts" class="match-list"></div><div id="matchEnds" class="match-list"></div></div><button class="button primary" id="readMatches">▶ Read complete sentences</button><p class="teacher-note">Read the complete sentences aloud. Then change one detail.</p></section>
 
-    <section class="chapter" id="speak" data-step>
-      <header><span class="number">05</span><div><p class="eyebrow green">Speak for real</p><h2>Your yesterday</h2><p>Move from support to free speaking.</p></div></header>
-      <div class="speaking-grid">
-        <article class="prompt-card"><span class="tag">WARM-UP</span><h3>True or false?</h3><p id="truePrompt">You were tired yesterday morning.</p><div><button id="trueBtn">Yes, I was.</button><button id="falseBtn">No, I wasn’t. I was…</button></div><button class="icon-button" id="nextTrue" aria-label="Next prompt">New card ↻</button></article>
-        <article class="prompt-card"><span class="tag">MINI-DIALOGUE</span><h3>Complete it aloud</h3><p>A: Were you at home last night?</p><p>B: No, I wasn’t.</p><p>A: Where were you?</p><p class="blank">B: I was at __________.</p></article>
-      </div>
-      <div class="story-builder"><div><p class="eyebrow purple">Personal story</p><h3>Yesterday: true for me</h3><p>Type short notes. Then use them to speak for 30–60 seconds.</p></div><div id="personalFields"></div><button class="button primary" id="makeStory">Build my speaking card</button><article id="myStory" class="my-story" hidden></article></div>
-      <div class="final-challenge"><div><span>FINAL CHALLENGE</span><h2>Tell me about yesterday</h2><p>Use the prompts. Don’t read complete sentences.</p></div><div class="prompt-cloud"><b>morning</b><b>work</b><b>weather</b><b>road</b><b>lunch</b><b>evening</b><b>home</b><b>tired</b></div><button class="button light" id="timerBtn">Start 60-second timer</button><strong id="timer" aria-live="polite">1:00</strong></div>
-      <div class="exit"><p class="eyebrow green">Exit task</p><h2>5–4–3–2–1 Recall</h2><div><span><b>5</b> sentences with <strong>was</strong></span><span><b>4</b> sentences with <strong>were</strong></span><span><b>3</b> negative sentences</span><span><b>2</b> questions</span><span><b>1</b> short story</span></div><button class="button primary" id="completeLesson">I completed the lesson ✓</button></div>
-    </section>
-  </main>
-  <footer><b>English Lab</b><span>Was / Were • A1</span><button id="resetLesson">Reset progress</button></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-</body>
-</html>
+<section class="chapter" id="step-7" data-step="7"><header><span class="number">07</span><div><p class="eyebrow red">Negative forms</p><h2>Not true?</h2></div></header><div class="negative-rule"><p>My friends were busy. <b>They weren’t free.</b></p><p>My lunch was simple. <b>It wasn’t big.</b></p><div><span>was not → <b>wasn’t</b></span><span>were not → <b>weren’t</b></span></div></div></section>
+
+<section class="chapter" id="step-8" data-step="8"><header><span class="number">08</span><div><p class="eyebrow red">Transform</p><h2>Make it negative</h2><p>Tap each sentence. Then make it true for you.</p></div></header><div id="negativeCards" class="tap-grid"></div></section>
+
+<section class="chapter" id="step-9" data-step="9"><header><span class="number">09</span><div><p class="eyebrow green">About you</p><h2>TRUE or FALSE?</h2><p>You cannot answer only yes or no.</p></div></header><article class="prompt-stage"><button class="speak icon" id="speakTrue">🔊 Hear it</button><p id="truePrompt">You were tired yesterday morning.</p><div><button id="trueBtn">Yes, I was.</button><button id="falseBtn">No, I wasn’t. I was…</button></div><button class="button secondary" id="nextTrue">New statement ↻</button></article></section>
+
+<section class="chapter" id="step-10" data-step="10"><header><span class="number">10</span><div><p class="eyebrow blue">Questions</p><h2>Move WAS / WERE</h2><p>Notice what moves to the beginning.</p></div></header><div class="switch-example"><div><small>STATEMENT</small><p>You <mark>were</mark> tired.</p></div><span>→</span><div><small>QUESTION</small><p><mark>Were</mark> you tired?</p></div></div><div class="discovery"><button class="chip-answer wide" data-answer="Was + I / he / she / it …?">Was + ?</button><button class="chip-answer wide" data-answer="Were + you / we / they …?">Were + ?</button></div><aside class="warning"><span>×</span><p><del>Did you were tired?</del><br><b>Were you tired?</b><br>No <strong>DID</strong> with was / were.</p></aside></section>
+
+<section class="chapter" id="step-11" data-step="11"><header><span class="number">11</span><div><p class="eyebrow orange">Word order</p><h2>Put the words in order</h2><p>After each question, answer personally.</p></div></header><div class="order-card"><div class="scoreline"><h3>Build the question</h3><strong id="orderCount">1 / 6</strong></div><div class="answer-zone" id="answerZone"></div><div class="word-bank" id="wordBank"></div><div class="feedback" id="orderFeedback"></div><button class="button secondary" id="resetOrder">Reset</button></div></section>
+
+<section class="chapter" id="step-12" data-step="12"><header><span class="number">12</span><div><p class="eyebrow purple">Retrieval</p><h2>Build the question</h2><p>Use only the cue. Say the full question before revealing it.</p></div></header><article class="cue-card"><small>CUE</small><h3 id="cueText">tired / yesterday</h3><button class="button primary" id="revealCue">Reveal question</button><p id="cueAnswer" hidden>Were you tired yesterday?</p><button class="button secondary" id="nextCue">Next cue →</button></article></section>
+
+<section class="chapter" id="step-13" data-step="13"><header><span class="number">13</span><div><p class="eyebrow green">Conversation</p><h2>Mini-dialogues</h2><p>Listen first. Open the script afterward.</p></div></header><div class="audio-bar"><button class="speak" data-speak="dialogues">▶ Listen to dialogues</button><button class="stop-audio">■ Stop</button></div><details class="script-toggle"><summary>Show dialogue scripts</summary><div id="dialogues" class="dialogues"><p><b>A:</b> Were you tired yesterday?<br><b>B:</b> Yes, I was.<br><b>A:</b> Why?<br><b>B:</b> I was busy at work.</p><p><b>A:</b> Was the road busy?<br><b>B:</b> Yes, it was.<br><b>A:</b> What time?<br><b>B:</b> At about 8:00.</p><p><b>A:</b> Were you at home last night?<br><b>B:</b> No, I wasn’t.<br><b>A:</b> Where were you?<br><b>B:</b> I was at ______.</p></div></details></section>
+
+<section class="chapter" id="step-14" data-step="14"><header><span class="number">14</span><div><p class="eyebrow red">Correct me</p><h2>Say NO and continue</h2><p>Give a negative answer, then the correct information.</p></div></header><article class="prompt-stage funny"><span>TEACHER SAYS</span><p id="noPrompt">Were you in bed at 8 yesterday morning?</p><button class="speak icon" id="speakNo">🔊 Hear it</button><details><summary>Show answer frame</summary><p>No, I wasn’t. I was ______.</p></details><button class="button secondary" id="nextNo">Next question ↻</button></article></section>
+
+<section class="chapter" id="step-15" data-step="15"><header><span class="number">15</span><div><p class="eyebrow purple">Memory</p><h2>Disappearing text</h2><p>Read it. Then remove support and reconstruct the whole story.</p></div></header><div class="disappear-card"><div class="level-buttons"><button data-level="0" class="active">Full text</button><button data-level="1">Missing verbs</button><button data-level="2">Prompts only</button></div><div id="disappearText"></div><button class="speak" data-speak="disappearText">▶ Listen</button></div></section>
+
+<section class="chapter" id="step-16" data-step="16"><header><span class="number">16</span><div><p class="eyebrow green">Personalise</p><h2>Yesterday: true for me</h2><p>Type short true information.</p></div></header><div class="story-builder"><div id="personalFields" class="fields"></div><button class="button primary" id="makeStory">Build my speaking card</button><article id="myStory" class="my-story" hidden></article><button class="speak" id="speakMyStory" hidden>▶ Listen to my story</button></div></section>
+
+<section class="chapter" id="step-17" data-step="17"><header><span class="number">17</span><div><p class="eyebrow blue">Connect</p><h2>Yesterday vs today</h2><p>Complete both sides. Then reverse it.</p></div></header><div id="todayPast" class="conversion-list"></div><button class="button secondary" id="reversePairs">Reverse: past → present</button></section>
+
+<section class="chapter" id="step-18" data-step="18"><header><span class="number">18</span><div><p class="eyebrow green">Longer turn</p><h2>My last weekend</h2><p>Use only the prompts.</p></div></header><div class="weekend-grid"><button><b>Saturday morning</b><span>where? · tired? · weather?</span></button><button><b>Saturday afternoon</b><span>where? · busy? · hungry?</span></button><button><b>Saturday evening</b><span>where? · friends? · tired?</span></button></div><details class="support"><summary>Need language support?</summary><p>I was + place/adjective<br>It was + adjective<br>We were + place/adjective</p></details></section>
+
+<section class="chapter" id="step-19" data-step="19"><header><span class="number">19</span><div><p class="eyebrow green">Interview</p><h2>Teacher interview</h2><p>Answer with two sentences, not one.</p></div></header><article class="interview-card"><small>QUESTION</small><h3 id="interviewQuestion">Where were you yesterday morning?</h3><button class="speak icon" id="speakInterview">🔊 Hear question</button><button class="button secondary" id="nextInterview">Next question ↻</button><aside><b>Answer stretcher</b><p>I was at work. I was very busy.</p></aside></article></section>
+
+<section class="chapter" id="step-20" data-step="20"><header><span class="number">20</span><div><p class="eyebrow green">Final speaking challenge</p><h2>Tell me about yesterday</h2><p>Speak for 30–60 seconds.</p></div></header><div class="final-challenge"><div class="prompt-cloud"><b>morning</b><b>work</b><b>weather</b><b>road</b><b>lunch</b><b>evening</b><b>home</b><b>tired</b></div><button class="button light" id="timerBtn">Start 60-second timer</button><strong id="timer">1:00</strong><details class="script-toggle model"><summary>Show a model only after you speak</summary><p id="model">Yesterday I was at work in the morning. The roads were busy. The weather was good. At lunchtime I was hungry. In the evening I was at home. I was very tired.</p><button class="speak" data-speak="model">▶ Listen to model</button></details></div></section>
+
+<section class="exit"><p class="eyebrow green">Exit task</p><h2>5–4–3–2–1 Recall</h2><p>Without looking back, say:</p><div><span><b>5</b> sentences with WAS</span><span><b>4</b> sentences with WERE</span><span><b>3</b> negative sentences</span><span><b>2</b> questions</span><span><b>1</b> short story</span></div><button class="button primary" id="completeLesson">I completed the lesson ✓</button></section></main>
+<footer><b>English Lab</b><span>Was / Were • A1</span><button id="resetLesson">Reset progress</button></footer><div class="toast" id="toast" role="status" aria-live="polite"></div></body></html>
