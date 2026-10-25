@@ -9,3 +9,7 @@ A responsive, framework-free lesson for practising **was / were** through guided
 3. Choose **Deploy from a branch**, select the branch and folder, then save.
 
 No build step or external dependency is required.
+
+## More lessons
+
+- [Halloween Comparatives Quest — A1](https://mazurj57.github.io/Today-vs-Yesterday/halloween-comparatives-a1/)
